@@ -1,0 +1,106 @@
+/* Add margin to the button */
+.generate-button {
+  margin-top: 20px;
+  padding: 12px 24px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+.generate-button:hover {
+  background-color: #0056b3;
+}
+
+/* Arrange heatmaps side by side */
+.heatmap-visualization {
+  display: flex;
+  gap: 40px; /* Space between heatmaps */
+  margin-top: 30px;
+  margin-bottom: 60px; /* Add space at the bottom to avoid footer overlap */
+}
+
+.heatmap-container {
+  flex: 1; /* Each heatmap container takes equal space */
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.heatmap-grid {
+  display: grid;
+  gap: 4px;
+  margin-top: 15px;
+}
+
+/* Style for selection dropdowns */
+.selection-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+}
+
+.selection {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.selection label {
+  font-weight: 600;
+  font-size: 16px;
+  color: #333;
+}
+
+.selection select {
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  color: #555;
+  background-color: #fff;
+  transition: border-color 0.3s ease;
+}
+
+.selection select:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+/* Comparative report styling */
+.comparative-report {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 30px;
+  margin-bottom: 60px; /* Add space at the bottom to avoid footer overlap */
+}
+
+.comparative-report h3 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.comparative-report p {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* Footer spacing */
+.heatmaps {
+  padding-bottom: 80px; /* Ensure enough space for the footer */
+}

@@ -1,0 +1,81 @@
+/* Popup Overlay */
+.popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* Ensure popup is above footer */
+    padding-bottom: 50px; /* Extra bottom space to avoid cutoff */
+}
+
+/* Popup Content */
+.popup-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 800px;
+    max-height: 85vh; /* Reduce max height slightly to fit well */
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+}
+
+/* Close Button */
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    color: #333;
+}
+
+/* Scrollable Content */
+.popup-scrollable {
+    flex-grow: 1; /* Allows content to expand within the popup */
+    max-height: calc(85vh - 60px); /* Adjust height dynamically */
+    overflow-y: auto;
+    padding-right: 10px;
+    padding-bottom: 50px; /* More bottom padding to prevent cutoff */
+}
+
+/* Graph Container */
+.graph-container {
+    margin-bottom: 20px;
+    padding: 10px;
+    background: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Boolean Sensors */
+.boolean-sensors {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.boolean-box {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f8f9fa;
+    flex: 1 1 200px; /* Flexible box sizing */
+    text-align: center;
+}
+
+/* Extra Space at Bottom to Prevent Cut-off */
+.popup-bottom-space {
+    height: 100px; /* Ensures there is enough space at the bottom */
+}

@@ -1,0 +1,77 @@
+.anomaly-detection {
+  padding: 20px;
+  text-align: center;
+  margin-bottom: 50px; /* Leave a gap at the bottom */
+  margin-top: 100px; /* Added top margin to avoid header overlap */
+}
+
+h2 {
+  font-size: 36px; /* Increase heading size */
+  font-weight: bold;
+  color: #333; /* Dark color for the heading */
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-size: 28px; /* Larger subheading */
+  font-weight: bold;
+  color: #444; /* Slightly lighter color */
+  margin-bottom: 10px;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.scatter-plot-container {
+  display: flex;
+  justify-content: center; /* Horizontally center the plots */
+  flex-wrap: wrap; /* Allow wrapping if there are too many plots */
+  gap: 20px; /* Add space between plots */
+  margin-top: 20px;
+}
+
+.field-plot {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80%; /* Increase width to 80% for larger plots */
+  max-width: 800px; /* Optional: restrict the max width */
+  border: 2px solid #333; /* Add border around each graph */
+  padding: 20px; /* Increase padding around the graph */
+  border-radius: 10px; /* Optional: rounded corners for the box */
+  background-color: #f9f9f9; /* Light background for better visibility */
+}
+
+.field-plot svg {
+  border: 1px solid #ccc; /* Add a subtle border around the SVG graph */
+  border-radius: 5px; /* Optional: rounded corners for SVG */
+  width: 100%; /* Ensure the SVG takes the full width of the container */
+  height: 600px; /* Increase the height of the SVG to make plots larger */
+}
+
+.threshold-control {
+  margin-top: 20px;
+}
+
+input[type="number"] {
+  padding: 5px;
+  font-size: 16px;
+  margin-top: 5px;
+  border-radius: 5px; /* Rounded corners for input box */
+  border: 1px solid #ccc;
+  width: 60px;
+  text-align: center;
+}
+
+input[type="number"]:focus {
+  outline: none;
+  border-color: #007bff; /* Blue border on focus */
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Subtle glow effect */
+}
+
+label {
+  font-size: 16px;
+  font-weight: 600;
+  color: #333;
+}

@@ -1,0 +1,96 @@
+/* Ensure body is scrollable */
+body {
+    margin: 0;
+    padding: 0;
+    overflow-y: auto; /* Allow scrolling */
+  }
+  
+  /* Analytics Landing Container */
+  .analytics-landing {
+    text-align: center;
+    padding: 100px 20px 60px; /* Increased bottom padding */
+    min-height: auto; /* Allow it to grow based on content */
+    overflow-y: auto; /* Enable scrolling for this container */
+  }
+  
+  /* Button Container */
+  .button-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px; /* Increased gap between button cards */
+    margin-top: 20px;
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+  }
+  
+  /* Button Card */
+  .button-card {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    max-width: 300px; /* Limit width for better readability */
+  }
+  
+  .button-card:hover {
+    transform: translateY(-5px); /* Lift on hover */
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+  }
+  
+  .button-card button {
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    background: linear-gradient(135deg, #007bff, #0056b3); /* Gradient background */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    width: 100%; /* Full width button */
+  }
+  
+  .button-card button:hover {
+    background: linear-gradient(135deg, #0056b3, #007bff); /* Reverse gradient on hover */
+  }
+  
+  .button-info {
+    margin-top: 15px;
+    font-size: 0.9rem;
+    color: #555;
+    line-height: 1.5;
+  }
+  
+  /* Additional Information Section */
+  .additional-info {
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #f8f9fa; /* Light background */
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  }
+  
+  .additional-info h3 {
+    color: #007bff; /* Blue color for headings */
+    margin-bottom: 15px;
+  }
+  
+  .additional-info p {
+    font-size: 1rem;
+    color: #333;
+    line-height: 1.6;
+    margin-bottom: 15px;
+  }
+  
+  .additional-info ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .additional-info li {
+    font-size: 0.95rem;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 10px;
+  }
+  

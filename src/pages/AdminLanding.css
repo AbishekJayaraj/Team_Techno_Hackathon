@@ -1,0 +1,121 @@
+/* General Styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+    overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+/* Admin Container */
+.admin-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+    box-sizing: border-box;
+    overflow-y: auto; /* Allow scrolling */
+    padding-top: 70px; /* Space for fixed header */
+}
+
+/* Header */
+.header {
+    width: 97%;
+    background-color: #007bff;
+    color: white;
+    padding: 15px 20px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+/* Heading */
+.admin-container h2 {
+    font-size: 28px;
+    margin: 20px 0;
+    color: #333;
+    font-weight: 700;
+    text-align: center;
+}
+
+/* Box around the Map */
+.map-box {
+    width: 90%;
+    max-width: 1200px;
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    border: 2px solid #007bff;
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Ensure Map Container Fills Box */
+.map-container {
+    width: 100%;
+    height: 500px; /* Ensure explicit height */
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+}
+
+/* Fix for Leaflet Map Not Showing */
+.leaflet-container {
+    width: 100% !important;
+    height: 100% !important;
+}
+
+/* Popup Styling */
+.leaflet-popup-content {
+    font-size: 14px;
+    font-weight: 500;
+    color: #333;
+}
+
+.leaflet-popup-content-wrapper {
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer */
+.footer {
+    width: 100%;
+    background-color: #007bff;
+    color: white;
+    padding: 15px 20px;
+    text-align: center;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: auto;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .map-box {
+        width: 95%;
+    }
+
+    .map-container {
+        height: 50vh; /* Responsive height */
+    }
+
+    .admin-container h2 {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 480px) {
+    .map-container {
+        height: 40vh; /* Smaller height for small screens */
+    }
+
+    .admin-container h2 {
+        font-size: 20px;
+    }
+}
